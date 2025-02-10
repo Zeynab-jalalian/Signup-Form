@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>Multi Step Form</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">
+   <title>Multi Step Form</title>
 </head>
+
 <body>
-    <div class="container">
-        <header>Signup Form</header>
-        <div class="progress-bar">
+   <div class="container">
+
+      <header>Signup Form</header>
+
+      <div class="progress-bar">
          <div class="step">
             <p>Name</p>
             <div class="bullet">
@@ -39,90 +45,94 @@
             </div>
             <div class="check   fas fa-check"></div>
          </div>
-        </div>
-        
-        <div class="form-outer">
-            <form action="#">
+      </div>
 
-               <div class="page">
-                <div class="title">Basic Info:</div>
-                 <div class="field">
-                    <div class="label">First Name</div>
-                    <input type="text">
-                 </div>
-                 <div class="field">
-                    <div class="label">Last Name</div>
-                    <input type="text">
-                 </div>
-                 <div class="field">
-                   <button>Next</button>
-                 </div>
+      <div class="form-outer">
+         <form action="#">
+
+            <div class="page slidepage">
+               <div class="title">Basic Info:</div>
+               <div class="field">
+                  <div class="label">First Name</div>
+                  <input type="text">
                </div>
-               
-
-               <div class="page">
-                <div class="title">Contact Info:</div>
-                 <div class="field">
-                    <div class="label">Email Address</div>
-                    <input type="text">
-                 </div>
-                 <div class="field">
-                    <div class="label">Phone Number</div>
-                    <input type="number">
-                 </div>
-                 <div class="field btns">
-                   <button class="prev-1 prev">Previous</button>
-                   <button class="next-1 next">Next</button>
-                 </div>
+               <div class="field">
+                  <div class="label">Last Name</div>
+                  <input type="text">
                </div>
-
-                
-
-
-               <div class="page">
-                <div class="title">Date of Birth:</div>
-                 <div class="field">
-                    <div class="label">Date</div>
-                    <input type="text">
-                 </div>
-                 <div class="field">
-                    <div class="label">Gender</div>
-                    <select>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Other</option>
-                    </select>
-                 </div>
-                 <div class="field btns">
-                   <button class="prev-2 prev">Previous</button>
-                   <button class="next-2 next">Next</button>
-                 </div>
+               <div class="field nextBtn">
+                  <button>Next</button>
                </div>
+            </div>
 
-              
 
-               <div class="page">
-                <div class="title">Login Details:</div>
-                 <div class="field">
-                    <div class="label">Username</div>
-                    <input type="text">
-                 </div>
-                 <div class="field">
-                    <div class="label">Password</div>
-                    <input type="password">
-                 </div>
-                 <div class="field btns">
-                   <button class="prev-3 prev">Previous</button>
-                   <button class="submit">Submit</button>
-                 </div>
+            <div class="page">
+               <div class="title">Contact Info:</div>
+               <div class="field">
+                  <div class="label">Email Address</div>
+                  <input type="text">
                </div>
+               <div class="field">
+                  <div class="label">Phone Number</div>
+                  <input type="number">
+               </div>
+               <div class="field btns">
+                  <button class="prev-1 prev">Previous</button>
+                  <button class="next-1 next">Next</button>
+               </div>
+            </div>
 
 
 
-               
 
-            </form>
-        </div>
-    </div>
+            <div class="page">
+               <div class="title">Date of Birth:</div>
+               <div class="field">
+                  <div class="label">Date</div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <div class="label">Gender</div>
+                  <select>
+                     <option>Male</option>
+                     <option>Female</option>
+                     <option>Other</option>
+                  </select>
+               </div>
+               <div class="field btns">
+                  <button class="prev-2 prev">Previous</button>
+                  <button class="next-2 next">Next</button>
+               </div>
+            </div>
+
+
+
+            <div class="page">
+               <div class="title">Login Details:</div>
+               <div class="field">
+                  <div class="label">Username</div>
+                  <input type="text">
+               </div>
+               <div class="field">
+                  <div class="label">Password</div>
+                  <input type="password">
+               </div>
+               <div class="field btns">
+                  <button class="prev-3 prev">Previous</button>
+                  <button class="submit">Submit</button>
+               </div>
+            </div>
+
+
+
+
+
+         </form>
+      </div>
+
+   </div>
+
+   <script src="script.js"></script>
 </body>
+
 </html>
