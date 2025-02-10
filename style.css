@@ -174,7 +174,7 @@ form .page .field select {
     background: #262626;
 }
 
-.progress-bar .step span {
+.progress-bar .step .bullet span {
     font-weight: 500;
     font-size: 17px;
     line-height: 25px;
@@ -182,7 +182,7 @@ form .page .field select {
     left: 50%;
     transform: translateX(-50%);
 }
-.progress-bar .step span.active{
+.progress-bar .step .bullet.active span{
     display: none;
 }
 .progress-bar .step .check.active{
