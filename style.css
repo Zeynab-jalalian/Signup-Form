@@ -140,7 +140,9 @@ form .page .field select{
   width: 44px;
   bottom: 11px;
   right: -51px;
-  background: #262626;
+}
+.progress-bar .step .bullet::before{
+    background: #262626;
 }
 .progress-bar .step span{
     font-weight: 500;
