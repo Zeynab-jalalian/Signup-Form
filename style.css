@@ -11,3 +11,88 @@ body{
     align-items: center;
     background: linear-gradient(#008cff,#ffffff);
 }
+.container{
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 50px 35px 10px 35px;
+}
+.container .form{
+    width: 100%;
+    overflow: hidden;
+}
+.form form{
+    width: 400%;
+    display: flex;
+}
+.form form .page{
+    width: 25%;
+}
+.container header{
+    color: #000;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.progress{
+    display: flex;
+    margin: 40px 0;
+}
+.progress .step{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.progress .step p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.progress .step .check{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: none;
+}
+.progress .step .bullet{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.bullet::before{
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 3px;
+    background: #000;
+    right: -50px;
+    top: 40%;
+}
+.bullet.active::after{
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 3px;
+    background: #ff00f2;
+    right: -50px;
+    top: 40%;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: an 0.3s linear forwards;
+}
+@keyframes an{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progress .step:last-child .bullet::before,
+.progress .step:last-child .bullet::after{
+    display: none;
+}
