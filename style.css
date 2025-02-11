@@ -59,16 +59,20 @@ body {
     margin-bottom: 10px;
     text-align: center;
 }
-
+.progress .step p.active{
+    color: #ff00f2;
+}
 .progress .step .check {
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 80%;
     transform: translate(-50%, -50%);
     color: white;
     display: none;
 }
-
+.step .check.active{
+ display: block;
+}
 .progress .step .bullet {
     position: relative;
     left: 50%;
@@ -78,7 +82,13 @@ body {
     border-radius: 50%;
     border: 1px solid #000;
 }
-
+.bullet.active{
+    border: 1px solid #ff00f2 !important;
+    background: #ff00f2;
+}
+.bullet.active span{
+    display: none;
+}
 .bullet::before {
     content: '';
     position: absolute;
