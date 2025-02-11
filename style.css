@@ -105,6 +105,7 @@ body{
     width: 330px;
     height: 45px;
     margin: 50px 0;
+    display: flex;
     position: relative;
 }
 .page .field input{
@@ -134,4 +135,18 @@ body{
 }
 .field button:hover{
     background: #000;
+}
+.field select{
+    width: 100%;
+    height: 100%;
+}
+.field .btns button{
+    margin-top: -20px !important;
+}
+.page .btns button.prev{
+    margin-right: 3px;
+    font-size: 17px;
+}
+.page .btns button.next{
+    margin-left: 3px;
 }
