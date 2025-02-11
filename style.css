@@ -119,4 +119,19 @@ body{
 .page .field .label{
     position: absolute;
     top: -50%;
+    font-size: 18px;
+}
+.field button{
+    width: 100%;
+    background: #ff00f2;
+    padding: 15px;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.field button:hover{
+    background: #000;
 }
