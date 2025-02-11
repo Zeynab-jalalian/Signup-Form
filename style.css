@@ -1,55 +1,66 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#008cff,#ffffff);
+    background: linear-gradient(#008cff, #ffffff);
 }
-.container{
+
+.container {
     width: 400px;
     background: #fff;
     border-radius: 5px;
     text-align: center;
     padding: 50px 35px 10px 35px;
 }
-.container .form{
+
+.container .form {
     width: 100%;
     overflow: hidden;
 }
-.form form{
+
+.form form {
     width: 400%;
     display: flex;
 }
-.form form .page{
+
+.form form .page {
     width: 25%;
+    transition: 0.3s ease-in-out;
 }
-.container header{
+
+.container header {
     color: #000;
     font-weight: 600;
     font-size: 30px;
     margin-bottom: 30px;
 }
-.progress{
+
+.progress {
     display: flex;
     margin: 40px 0;
 }
-.progress .step{
+
+.progress .step {
     text-align: center;
     width: 100%;
     position: relative;
 }
-.progress .step p{
+
+.progress .step p {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
 }
-.progress .step .check{
+
+.progress .step .check {
     position: absolute;
     left: 50%;
     top: 70%;
@@ -57,7 +68,8 @@ body{
     color: white;
     display: none;
 }
-.progress .step .bullet{
+
+.progress .step .bullet {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -66,7 +78,8 @@ body{
     border-radius: 50%;
     border: 1px solid #000;
 }
-.bullet::before{
+
+.bullet::before {
     content: '';
     position: absolute;
     width: 44px;
@@ -75,7 +88,8 @@ body{
     right: -50px;
     top: 40%;
 }
-.bullet.active::after{
+
+.bullet.active::after {
     content: '';
     position: absolute;
     width: 44px;
@@ -87,28 +101,33 @@ body{
     transform: scaleX(0);
     animation: an 0.3s linear forwards;
 }
-@keyframes an{
-    100%{
+
+@keyframes an {
+    100% {
         transform: scaleX(1);
     }
 }
+
 .progress .step:last-child .bullet::before,
-.progress .step:last-child .bullet::after{
+.progress .step:last-child .bullet::after {
     display: none;
 }
-.page .title{
+
+.page .title {
     text-align: left;
     font-size: 25px;
     font-weight: 500;
 }
-.page .field{
+
+.page .field {
     width: 330px;
     height: 45px;
     margin: 50px 0;
     display: flex;
     position: relative;
 }
-.page .field input{
+
+.page .field input {
     width: 100%;
     height: 100%;
     padding-left: 30px;
@@ -117,36 +136,47 @@ body{
     outline: none;
     border: 1px solid lightgray;
 }
-.page .field .label{
+
+.page .field .label {
     position: absolute;
     top: -50%;
     font-size: 18px;
 }
-.field button{
+
+.field button {
+    display: flex;
     width: 100%;
+    justify-content: center;
+    text-align: center;
     background: #ff00f2;
     padding: 15px;
     color: white;
     border: none;
+    align-items: center;
     outline: none;
     cursor: pointer;
     font-size: 20px;
     transition: 0.3s;
 }
-.field button:hover{
+
+.field button:hover {
     background: #000;
 }
-.field select{
+
+.field select {
     width: 100%;
     height: 100%;
 }
-.field .btns button{
+
+.field .btns button {
     margin-top: -20px !important;
 }
-.page .btns button.prev{
+
+.page .btns button.prev {
     margin-right: 3px;
     font-size: 17px;
 }
-.page .btns button.next{
+
+.page .btns button.next {
     margin-left: 3px;
 }
